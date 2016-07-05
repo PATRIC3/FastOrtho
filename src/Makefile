@@ -12,6 +12,7 @@ else
 	LDFLAGS += --enable-auto-import
     endif
     ifeq ($(UNAME_S),Darwin)
+	CFLAGS += -Wno-unused-private-field
     endif
 endif
 
